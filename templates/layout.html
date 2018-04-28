@@ -5,10 +5,11 @@
   <p><a href="/">Home</a></p>
   <p><a href="/stable">Stable</a></p>
   <p><a href="/races">Races</a></p>
+  <p><a href="/create">Create</a></p>
 </div>
 <div class="page">
   <h1>Hobby Horse</h1>
-  {% for message in get_flashed_messages() %}
+  {% for message in messages %}
     <div class="flash">{{ message }}</div>
   {% endfor %}
   {% block body %}{% endblock %}
